@@ -1,0 +1,11 @@
+<table border="1">
+<tr><th>ID</th><th>Content</th><th>Created</th><th>Expires</th></tr>
+{% for r in rows %}
+<tr>
+<td>{{ r[0] }}</td>
+<td>{{ r[1] }}</td>
+<td>{{ r[2] }}</td>
+<td>{{ r[3] }}</td>
+</tr>
+{% endfor %}
+</table>

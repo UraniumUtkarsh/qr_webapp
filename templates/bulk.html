@@ -1,4 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card">
+<h2>Bulk QR Generator</h2>
 <form method="post">
-    <textarea name="links" rows="10" placeholder="One link per line"></textarea>
-    <button>Create Bulk QRs</button>
+<textarea name="links" rows="8" placeholder="https://site1.com
+https://site2.com"></textarea></textarea>
+<button>Create ZIP</button>
 </form>
+</div>
+{% endblock %}
