@@ -1,4 +1,4 @@
-# QRGen — Serverless QR Code Generator
+# QRGen - QR Code Generator
 
 QRGen is a **clean, privacy-focused, serverless QR Code Generator** built with **Flask**, designed to run on **Vercel** with **Upstash Redis** for temporary logging.
 
@@ -14,7 +14,7 @@ It supports:
 
 ## Features
 
-- **Fast & Serverless** (Vercel compatible) | yet not deployed
+- **Fast** (Vercel compatible) | yet not deployed
 - **Privacy-first** (no QR images stored on disk)
 - **Bulk QR generation** with ZIP download
 - **Redis-based logging** with automatic expiry
@@ -38,7 +38,7 @@ It supports:
 - **Backend**: Flask (Python)
 - **QR Generation**: `qrcode` + `Pillow`
 - **Storage**: Upstash Redis (TTL-based, no tables)
-- **Hosting**: Vercel (Serverless) | Not deployed
+- **Hosting**: Not deployed
 - **Frontend**: HTML, CSS, JavaScript (no framework)
 
 ---
@@ -46,28 +46,48 @@ It supports:
 ## Project Structure
 
 qrgen/
-│
-├── api/
-│ └── index.py # Vercel serverless Flask app
-│
-├── templates/
-│ ├── base.html
-│ ├── index.html
-│ ├── bulk.html
-│ └── admin.html
-│
-├── static/
-│ ├── css/style.css
-│ └── js/main.js
-│
-├── Github_images/
-│ ├── singleqr.png
-│ └── bulkqr.png
-│
-├── requirements.txt
-├── vercel.json
-└── README.md
 
+│
+
+├── api/
+
+│ └── index.py # Vercel Flask app | Not yet deployed
+
+│
+
+├── templates/
+
+│ ├── base.html
+
+│ ├── index.html
+
+│ ├── bulk.html
+
+│ └── admin.html
+
+│
+
+├── static/
+
+│ ├── css/style.css
+
+│ └── js/main.js
+
+│
+
+├── Github_images/
+
+│ ├── singleqr.png
+
+│ └── bulkqr.png
+
+│
+
+├── requirements.txt
+
+├── vercel.json
+
+└── README.md
 
 ---
 
